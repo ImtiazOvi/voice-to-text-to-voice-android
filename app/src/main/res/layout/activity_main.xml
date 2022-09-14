@@ -51,13 +51,59 @@
         app:layout_constraintTop_toBottomOf="@+id/voiceResultTv" />
 
     <View
+        android:id="@+id/view"
         android:layout_width="0dp"
         android:layout_height="4dp"
-        android:background="#B8B2B2"
         android:layout_marginTop="16dp"
+        android:background="#B8B2B2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/takeVoiceBtn" />
+
+
+    <TextView
+        android:id="@+id/textToVoiceTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Voice to Text"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/textEt"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:background="#B8B2B2"
+        android:hint="Input text for voice output"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textToVoiceTitle"
+        app:layout_constraintStart_toStartOf="@+id/textToVoiceTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textToVoiceTitle" />
+
+
+    <TextView
+        android:id="@+id/listenVoiceBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:paddingVertical="16dp"
+        android:text="Listen text to voice"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textEt"
+        app:layout_constraintStart_toStartOf="@+id/textEt"
+        app:layout_constraintTop_toBottomOf="@+id/textEt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
